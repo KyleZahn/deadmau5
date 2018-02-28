@@ -1,0 +1,82 @@
+
+#mausBackground{
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:90%;
+    width:100%;
+    overflow: hidden;
+}
+
+#secondary {
+  background-color:#000;
+  height: 15%;
+}
+
+
+.fixHeader {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-family: Arial Black;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  background-color: transparent;
+  font-style: normal;
+  letter-spacing: -7px;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.mausContent{
+    width:100%;
+    height: 15%;
+    text-align: center;
+}
+
+.mausDesc{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+@media (max-width:600px) { 
+  .mausDesc {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width:419px) { 
+  .mausDesc {
+    margin-top: 50px;
+  }
+}
+
+@media (max-height:525px) { 
+  #mausBackground {
+    height: 110%;
+  }
+}
+
+@media (max-height:435px) { 
+  #mausBackground {
+    height: 155%;
+  }
+}
+
+@media (max-width:415px) { 
+  .navPic img {
+      margin-top: 6% !important;
+      height: 12% !important;
+      width: 48% !important;
+  }
+}

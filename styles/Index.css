@@ -1,0 +1,197 @@
+.tourTitle {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color:#ffffff;
+    font-size: 106px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 92%;
+}
+
+.midTitle {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color:#ffffff;
+    font-size: 106px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.midDesc {
+    font-family: 'Dosis', sans-serif;
+    color:#ffffff;
+    background-color: transparent;
+    border: 2px solid #fff !important;
+    border-radius: 3px;
+    font-size: 14px;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 0.25em 0.25em 0.25em 1.6em ;
+    margin-left: 22%;
+    line-height: 3em;
+    width: 150px;
+    margin-bottom: 92%;
+}
+
+.secondDesc {
+    font-family: 'Dosis', sans-serif;
+    color:#ffffff;
+    background-color: transparent;
+    border: 2px solid #fff !important;
+    border-radius: 3px;
+    font-size: 14px;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 0.25em 0.25em 0.25em 1.9em ;
+    margin-left: 25%;
+    line-height: 3em;
+    width: 125px;
+}
+
+.midDesc:hover, 
+.secondDesc:hover,
+.vidDesc:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+}
+
+.vidTitle {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color:#ffffff;
+    font-size: 106px;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.vidDesc {
+    font-family: 'Dosis', sans-serif;
+    color:#ffffff;
+    background-color: transparent;
+    border: 2px solid #fff !important;
+    border-radius: 3px;
+    font-size: 14px;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 0.25em 0.25em 0.25em 1.8em ;
+    margin-left: 25%;
+    line-height: 3em;
+    width: 120px;
+    position: absolute;
+    margin-left: 30%;
+}
+
+@media (max-width:750px) { 
+    .vidTitle {
+        margin-top: 2%;
+        margin-left: 16%;
+    }
+ }
+
+ @media (max-width:450px) { 
+    .vidTitle {
+        margin-top: 1%;
+        margin-left: 12%;
+        font-size: 85px;
+    }
+    .tourTitle {
+        font-size: 85px;
+    }
+    .midTitle {
+        font-size: 85px;
+    }
+    .midDesc {
+        width: 140px;
+    }
+ }
+
+.bg {
+    background: url("../assets/background1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.centerItems {
+    width: 100%;
+    height: 100%;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+
+.bg2 {
+    box-shadow : inset 0 0 1em #111;
+    background: url("../assets/background2.jpg");
+    z-index: 2;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width:100%;
+    height:100%;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+
+/* iframe */
+* {padding:0;margin:0;box-sizing:border-box;}
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    min-height: 100%;
+    pointer-events: none;
+}
+
+@media (max-width:415px) { 
+    .navPic img {
+        margin-top: 6% !important;
+        height: 12% !important;
+        width: 50% !important;
+    }
+  }

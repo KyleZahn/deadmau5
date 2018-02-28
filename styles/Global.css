@@ -1,0 +1,202 @@
+/* Global Styles */
+html, body {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+a:hover, a:visited, a:link, a:active { 
+    text-decoration: none;
+    color:#ffffff;
+}
+
+/* border: 1px solid red; */
+
+
+/* Footer */
+footer {
+    box-sizing: border-box;
+    padding:30px;
+    color:#ffffff;
+    background-color:#111;
+    width:100% !important;
+    max-width:100% !important;
+  }
+  
+  .news {
+      font-family: 'Dosis', sans-serif;
+      color:#ffffff;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+  
+  .newsDesc {
+      font-family: 'Roboto', sans-serif;
+      color:#ffffff;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  .privacy {
+      font-size: 13px;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      margin-top: 30px;
+      /* Internet Explorer 10 */
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+  }
+  
+  #icons {
+      letter-spacing: 10px;
+      margin-bottom: 25px;
+      background: transparent;
+      /* Internet Explorer 10 */
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+  }
+  
+  
+  .email {
+      /* Internet Explorer 10 */
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      /* Safari, Opera, and Chrome */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+  }
+  
+  .form-group {
+      font-family: 'Open Sans', sans-serif; 
+      height:46px;
+      width:160px;
+      font-size: 15px;
+      outline: none;
+  }
+  
+  .emailButton {
+      font-family: 'Roboto', sans-serif;
+      color:#ffffff;
+      background-color: transparent;
+      border: 2px solid #fff !important;
+      border-radius: 3px;
+      font-size: 17px;
+      text-transform: uppercase;
+      display: inline;
+      font-weight: 600;
+      padding: 0.79em 2.2em;
+  }
+  
+  .emailButton:hover {
+      background-color: white;
+      color: black;
+      transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+  }
+  
+
+
+/* Navbar */
+.navTitle {
+    float:left;
+    max-height:120px;
+    max-width:500px;
+    z-index: 5;
+}
+
+.navItem {
+    float:right;
+    margin-right:30px;
+    word-spacing: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top:49px;
+    letter-spacing: 3px;
+    font-family: 'Dosis', sans-serif;
+    color:#ffffff;
+    font-weight: 400;
+    z-index: 9;
+}
+
+.navItem a:hover {
+    color: #a8a8a8;
+}
+
+.dropbtn {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+@media (max-width:785px) { 
+    .navItem a {
+        display: none;
+    }
+    .dropbtn {
+        margin-top: 15%;
+        display: block;
+    }
+}
+
+@media (max-width:415px) { 
+    .navPic img {
+        margin-top: 6%;
+        height: 80%;
+        width: 50%;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 13px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; color: #000}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,183 @@
+html, body {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+#mausBackground{
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:90%;
+    width:100%;
+    overflow: hidden;
+}
+
+.title {
+    font-family: Dosis;
+    color: #fff;
+    background-color: #000;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 3px;
+    text-decoration: none;
+    z-index: 10;
+    text-align: center;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row dense;
+    grid-gap: 0.5rem;
+}
+
+.leftCol {
+    grid-column-start: 1;
+    text-align: right;
+    margin-right: 4%;
+    margin-top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+    color:#D0CECE;
+    font-weight: 300;
+    background-color: #000;
+    padding: 0.5rem;
+}
+
+.rightCol {
+    grid-column-start: 2;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-left: 8%;
+    margin-top: 2%;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 13px 1px;
+    font-size: 13px;
+    width: 110px;
+    color: #000 !important;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    background-color: #fff;
+}
+
+.rightCol:hover {
+    background-color: grey;
+    transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+}
+
+@media (max-height:700px) { 
+    #mausBackground {
+      height: 175%;
+    }
+  }
+  
