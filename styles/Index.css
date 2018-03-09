@@ -31,9 +31,9 @@
     letter-spacing: 2px;
     font-weight: 600;
     padding: 0.25em 0.25em 0.25em 1.6em ;
-    margin-left: 22%;
+    margin-left: 31%;
     line-height: 3em;
-    width: 150px;
+    width: 110px !important;
     margin-bottom: 92%;
 }
 
@@ -51,7 +51,7 @@
     padding: 0.25em 0.25em 0.25em 1.9em ;
     margin-left: 25%;
     line-height: 3em;
-    width: 125px;
+    width: 125px !important;
 }
 
 .midDesc:hover, 
@@ -89,7 +89,7 @@
     padding: 0.25em 0.25em 0.25em 1.8em ;
     margin-left: 25%;
     line-height: 3em;
-    width: 120px;
+    width: 120px !important;
     position: absolute;
     margin-left: 30%;
 }
@@ -193,5 +193,17 @@ iframe {
         margin-top: 6% !important;
         height: 12% !important;
         width: 50% !important;
+    }
+  }
+
+  @media (max-width:215px) { 
+    .tourTitle {
+        font-size: 70px !important;
+    }
+    .midTitle {
+        font-size: 70px !important;
+    }
+    .vidTitle {
+        font-size: 70px !important;
     }
   }
